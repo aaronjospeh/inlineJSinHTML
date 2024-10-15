@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>1302223083_Soal2</title>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="">
+    <form>
+      <div class="form-group">
+        <label>Nama</label>
+        <input type="text" class="form-control" id="nama" readonly onclick="inputDataNama()" />
+      </div>
+      <div class="form-group">
+        <label>NIM</label>
+        <input type="text" class="form-control" id="nim" readonly onclick="inputDataNim()" />
+      </div>
+    </form>
+
+    <script type="text/javascript">
+      function inputDataNama() {
+        let inpFromUser;
+        const inpNama = document.getElementById("nama");
+        inpFromUser = prompt("Masukkan nama kamu: ");
+        inpNama.value = inpFromUser;
+      }
+      function inputDataNim() {
+        let inpFromUser;
+        const inpNim = document.getElementById("nim");
+        inpFromUser = prompt("Masukkan nama kamu: ");
+        inpNim.value = inpFromUser;
+      }
+    </script>
+  </body>
+</html>
