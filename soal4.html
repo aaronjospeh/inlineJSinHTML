@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>1302223083_Soal3</title>
+    <link type="text/css" rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <center>
+      <div class="main">
+        <div class="title">Hitung Pythagoras</div>
+        <input type="number" class="form-control" id="a" placeholder="Nilai A" />
+        <input type="number" class="form-control" id="b" placeholder="Nilai B" />
+        <button onclick="hitungPithagoras()">Hitung!</button>
+        <div class="form-group">
+          <input type="number" class="form-control" id="hasil" disabled />
+        </div>
+      </div>
+    </center>
+
+    <script type="text/javascript">
+      function hitungPithagoras() {
+        const inpA = document.getElementById("a").value;
+        const inpB = document.getElementById("b").value;
+
+        document.getElementById("hasil").value = Math.sqrt(inpA * inpA + inpB * inpB);
+      }
+    </script>
+  </body>
+</html>
