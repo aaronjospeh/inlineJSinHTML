@@ -1,0 +1,32 @@
+<html>
+  <script>
+    var count = 0;
+    function tes() {
+      const table = document.getElementById("myTable");
+      const tr = document.createElement("tr");
+
+      for (var i = 0; i < 3; i++) {
+        var inp = prompt(`masukkan isi kolom ke ${i + 1}`);
+        const td = document.createElement("td");
+        td.innerHTML = inp;
+        tr.append(td);
+      }
+      table.append(tr);
+    }
+  </script>
+  <body>
+    <button onclick="tes()">Add Row</button>
+    <table id="myTable" border="1">
+      <tr>
+        <td>A</td>
+        <td>B</td>
+        <td>C</td>
+      </tr>
+      <tr>
+        <td>D</td>
+        <td>E</td>
+        <td>F</td>
+      </tr>
+    </table>
+  </body>
+</html>
